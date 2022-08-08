@@ -1,0 +1,55 @@
+drop database if exists my_case_study;
+
+create database my_case_study;
+
+use my_case_study;
+
+create table vi_tri(
+ma_vi_tri int primary key,
+ten_vi_tri varchar(45)
+);
+
+create table trinh_do(
+ma_trinh_do int primary key,
+ten_trinh_do varchar(45)
+);
+
+create table bo_phan(
+ma_bo_phan int primary key,
+ten_bo_phan varchar(45)
+);
+
+create table nhan_vien(
+ma_nhan_vien int primary key not null unique,
+ho_ten varchar(45) not null,
+ngay_sinh date not null,
+so_cmnd varchar(45) not null unique,
+luong double not null,
+so_dien_thoai varchar(45) not null unique,
+email varchar(45) not null unique,
+dia_chi varchar(45) not null,
+ma_vi_tri int not null,
+ma_trinh_do int not null,
+ma_bo_phan int not null,
+foreign key(ma_vi_tri) references vi_tri(ma_vi_tri),
+foreign key(ma_trinh_do) references trinh_do(ma_trinh_do),
+foreign key(ma_bo_phan) references bo_phan(ma_bo_phan)
+);
+
+create table loai_khach(
+ma_loai_khach int primary key,
+ten_loai_khach varchar(45)
+);
+
+create table khach_hang(
+ma_khach_hang int primary key not null unique,
+ho_ten varchar(45) not null,
+ngay_sinh date not null,
+gioi_tinh bit(1) not null,
+so_cmnd varchar(45) not null unique,
+so_dien_thoai varchar(45) not null unique,
+email varchar(45) not null unique,
+dia_chi varchar(45) not null,
+ma_loai_khach int  not null,
+foreign key(ma_loai_khach) references loai_khach(ma_loai_khach)
+);
