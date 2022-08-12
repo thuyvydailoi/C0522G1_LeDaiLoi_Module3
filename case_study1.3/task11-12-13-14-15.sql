@@ -46,9 +46,24 @@ limit 1);
 --  so_lan_su_dung (được tính dựa trên việc count các ma_dich_vu_di_kem).
 
 select hd.ma_hop_dong, ldv.ten_loai_dich_vu, dvdk.ten_dich_vu_di_kem, count(dvdk.ma_dich_vu_di_kem) as so_luong_su_dung
-from hop_dong hd
-join hop_dong_chi_tiet hdct on hd.ma_hop_dong = dv.ma_hop_dong
-join dich_vu_di_kem dvdk on hdct.ma_dich_vu_di_kem = dvdk.ma_dich_vu_di_kem
+from dich_vu_di_kem dvdk
+join hop_dong_chi_tiet hdct on hdct.ma_dich_vu_di_kem = dvdk.ma_dich_vu_di_kem
+join hop_dong hd on hdct.ma_hop_dong = hd.ma_hop_dong
 join dich_vu dv on hd.ma_dich_vu = dv.ma_dich_vu
 join loai_dich_vu ldv on  dv.ma_loai_dich_vu = ldv.ma_loai_dich_vu
-where count(dvdk.ma_dich_vu_di_kem) = 1;
+group by dvdk.ma_dich_vu_di_kem
+having count(dvdk.ma_dich_vu_di_kem) = 1;
+
+-- 15.	Hiển thi thông tin của tất cả nhân viên bao gồm ma_nhan_vien,
+--  ho_ten, ten_trinh_do, ten_bo_phan, so_dien_thoai, 
+--  dia_chi mới chỉ lập được tối đa 3 hợp đồng từ năm 2020 đến 2021
+
+select nv.ma_nhan_vien, nv.ho_ten, td.ten_trinh_do, bp.ten_bo_phan, nv.so_dien_thoai, nv.dia_chi, count(hd.ma_hop_dong) as so_luong_hop_dong
+from nhan_vien nv
+join trinh_do td on nv.ma_trinh_do = td.ma_trinh_do
+join bo_phan bp on nv.ma_bo_phan = bp.ma_bo_phan
+join hop_dong hd on nv.ma_nhan_vien = hd.ma_nhan_vien
+group by ma_nhan_vien
+having so_luong_hop_dong <= 3
+order by ma_nhan_vien;
+
