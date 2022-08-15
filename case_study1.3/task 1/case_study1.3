@@ -33,7 +33,7 @@ dia_chi varchar(45),
 ma_vi_tri int,
 ma_trinh_do int,
 ma_bo_phan int,
-da_xoa bit default 0,
+trang_thai bit default 0,
 foreign key(ma_vi_tri) references vi_tri(ma_vi_tri),
 foreign key(ma_trinh_do) references trinh_do(ma_trinh_do),
 foreign key(ma_bo_phan) references bo_phan(ma_bo_phan)
@@ -54,7 +54,7 @@ so_dien_thoai varchar(45) not null,
 email varchar(45),
 dia_chi varchar(45),
 ma_loai_khach int,
-da_xoa bit default 0,
+trang_thai bit default 0,
 foreign key(ma_loai_khach) references loai_khach(ma_loai_khach)
 );
 
