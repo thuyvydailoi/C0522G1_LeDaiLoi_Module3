@@ -3,18 +3,31 @@
     height: 80px;
 }
 .left{
-    background: lightblue;
+    background: darkgrey;
+    height: 1000px;
 }
 .right{
-    background: lightblue;
+    background: darkgrey;
+    height: 1000px;
 }
 .contain{
-    background: #7abaff;
+    background: blue;
+    height: 80px;
+}
+.content{
+    background: yellow;
+    height: 80px;
+
 }
 .row{
     display: flex;
     flex-wrap: wrap;
 }
+
+.right img {
+    border-radius: 50%;
+}
+
 a{
     font-family: Arial;
     font-size: 13px;
