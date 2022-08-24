@@ -23,24 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cc9bbef-1861-4034-899a-5c8e416decf8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_1.1/furama_resort.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ServerTimeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss09_daydoa/exercise/DiscountServlet/src/main/java/DiscountServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss09_daydoa/exercise/DiscountServlet/src/main/webapp/result.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss09_daydoa/prac/src/main/java/ConverterServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss09_daydoa/practice/dictionary/src/main/java/TranslationServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss09_daydoa/practice/src/main/java/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ddd.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss08_bootstrap/bai_tap/landing_page/landing_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss08_bootstrap/bai_tap/landing_page/landing_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10_daydoa1/practice/Converter/src/main/java/ConverterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10_daydoa1/practice/Converter/src/main/webapp/converter.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10_daydoa1/practice/dictionary/src/main/java/DictionaryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10_daydoa1/practice/dictionary/src/main/webapp/dictionary.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10_daydoa1/practice/display/src/main/java/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10_daydoa1/practice/display/src/main/java/service/CustomerServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../C0522G1_LeDaiLoi_Module2" />
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -170,7 +159,7 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -183,11 +172,12 @@
       <updated>1661221293072</updated>
       <workItem from="1661221295240" duration="821000" />
       <workItem from="1661243229793" duration="1522000" />
+      <workItem from="1661307703029" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -199,5 +189,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
